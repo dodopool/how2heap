@@ -130,7 +130,7 @@ int main()
 	puts("Take victim out from unsortedbin");
 	void *victim2 = malloc(0x4f0);
 	printf("%p\n", victim2);
-	puts("off-by-null into the size of vicim");
+	puts("off-by-null into the size of victim");
 	/* VULNERABILITY */
 	((char *)victim2)[-8] = '\x00';
 	/* VULNERABILITY */
